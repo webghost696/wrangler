@@ -1,0 +1,26 @@
+# AI Prompts and My Contributions
+
+I took charge of enhancing the Wrangler project, driving significant improvements with determination and a passion for learning. Below are the key challenges I tackled, rephrased to highlight my leadership and effort:
+
+1. **Resolve Build Failure Due to Checkstyle Violations**
+   - Original Prompt (Implied): Help me fix the Maven build failure with 8 Checkstyle errors in wrangler-api.
+
+2. **Debug Unhandled Exception in Unit Tests**
+   - Original Prompt: Address the "Unhandled exception type DirectiveExecutionException" error in AggregateStatsTest.testAggregateStats().
+
+3. **Fix Test Compilation Issues**
+   - Original Prompt: Handle exceptions like DirectiveExecutionException, ErrorRowException, and ReportErrorAndProceed in testInvalidByteSize().
+
+4. **Move and Update Test File Structure**
+   - Original Prompt: Address errors in AggregateStatsTest.java due to misplaced file (src/main/java instead of src/test/java).
+   - Re phrased: I orchestrated the relocation of `AggregateStatsTest.java` from `src/main/java` to `src/test/java`, resolving structural errors with confidence. I updated the file’s logic, including mocking `Token` instantiation, and optimized the build process, showcasing my ability to manage project architecture.
+
+5. **Analyze and Fix Checkstyle Configuration**
+
+6. **Run and Debug Maven Tests**
+   - Original Prompt: Run mvn test and share results to debug AggregateStatsTest issues.
+
+7. **Update Readme with Progress**
+   - Original Prompt: Provide an updated Readme.md with progress from Task a onwards.
+
+Through these efforts, I demonstrated initiative, mastered tools like Maven and Checkstyle, and embraced every challenge as an opportunity to grow. I’m thrilled to continue pushing the boundaries of my skills!

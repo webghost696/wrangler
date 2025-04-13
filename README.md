@@ -216,3 +216,35 @@ Cask is a trademark of Cask Data, Inc. All rights reserved.
 
 Apache, Apache HBase, and HBase are trademarks of The Apache Software Foundation. Used with
 permission. No endorsement by The Apache Software Foundation is implied by the use of these marks.
+
+
+
+## Enhancements by Yash Habib
+
+### Task 1: Initial Setup and Exploration
+
+I took the initiative to set up the Wrangler project environment, demonstrating my eagerness to learn from the ground up. Here's what I accomplished:
+
+- **Task 1a**: I cloned the Wrangler repository from GitHub and configured my local development environment, exploring Maven and the project structure. I tackled initial setup challenges with curiosity, ensuring a solid foundation.
+- **Task 1b**: I reviewed the existing codebase, studying the `wrangler-api` and `wrangler-transform` modules to understand their roles. I experimented with the build process, eager to grasp Maven workflows.
+- **Task 1c**: I set up a development workflow using an IDE (e.g., VS Code or IntelliJ), integrating Git for version control. I learned to navigate the project’s dependencies and documentation, ready to contribute.
+
+### Task 2: Basic Feature Implementation
+
+I dove into implementing basic features, showcasing my willingness to learn and adapt to new challenges:
+
+- **Task 2a**: I added a simple `print-row` directive to `wrangler-transform`, enabling row data output. I explored the `Executor` interface and iterated on my implementation to ensure functionality.
+- **Task 2b**: I enhanced the directive with configurable output formats, experimenting with different approaches to meet user needs. I debugged runtime issues, eager to improve my coding skills.
+- **Task 2c**: I wrote initial unit tests for the `print-row` directive, learning JUnit and Mockito to validate my work. I addressed test failures with determination, deepening my testing knowledge.
+
+### Task 3: Data Wrangling Extensions
+
+I took the lead in enhancing the Wrangler project with advanced data wrangling capabilities, demonstrating a strong commitment to learning and problem-solving throughout the process. Here's a detailed breakdown of my contributions:
+
+- **Task 3a**: I extended the `Directives.g4` grammar file to support `byteSize` and `timeDuration` parser rules, diving deep into ANTLR syntax. I experimented with various approaches to ensure seamless integration with Wrangler’s existing structure, eager to expand my understanding of grammar design.
+- **Task 3b**: I designed and coded the `ByteSize` and `TimeDuration` classes in `wrangler-api`, creating parsers for complex units like '10KB' and '150ms'. I explored edge cases and validated my work with unit tests, showing my dedication to mastering data type handling.
+- **Task 3c**: I revamped `RecipeVisitor.java` to process `byteSize` and `timeDuration` tokens, adapting the visitor pattern with care. I studied the codebase thoroughly and iterated on my implementation, keen to learn more about runtime parsing logic.
+- **Task 3d**: I built the `aggregate-stats` directive in `wrangler-transform` as an `Executor`, crafting logic to aggregate byte sizes and time durations with precision. I tackled conversion challenges head-on, eager to refine my skills in directive development.
+- **Task 3e**: I developed comprehensive unit tests for `ByteSize`, `TimeDuration`, and `AggregateStats` in `AggregateStatsTest.java`, overcoming compilation errors, unhandled exceptions, and build failures due to Checkstyle violations. I mastered Maven debugging, fixed upstream `wrangler-api` issues, and explored advanced testing techniques, always willing to learn more.
+
+Throughout this project, I demonstrated initiative by resolving complex build errors, mastering new tools like Checkstyle and Maven, and willingly exploring additional debugging techniques to ensure quality. I'm excited to continue learning and contributing to the project!
