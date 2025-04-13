@@ -67,6 +67,14 @@ directive
   )*?
   ;
 
+byteSize
+ : BYTE_SIZE
+ ;
+
+timeDuration
+ : TIME_DURATION
+ ;
+
 ifStatement
   : ifStat elseIfStat* elseStat? '}'
   ;
@@ -274,11 +282,15 @@ String
  | '"'  ( EscapeSequence | ~('"') )* '"'
  ;
 
+BYTE_SIZE: Number ([bB] | [kK][bB] | [mM][bB] | [gG][bB] | [tT][bB]) ;
+TIME_DURATION: Number ([nN][sS] | [mM][sS] | [sS] | [mM] | [mM][iI][nN] | [hH]) ;
+
 EscapeSequence
    :   '\\' ('b'|'t'|'n'|'f'|'r'|'"'|'\''|'\\')
    |   UnicodeEscape
    |   OctalEscape
    ;
+
 
 fragment
 OctalEscape
